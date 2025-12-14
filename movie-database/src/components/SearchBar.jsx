@@ -10,7 +10,7 @@ const SearchBar = ({ onSearch }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4" >
             <input
                 type="text"
                 placeholder="Search for a movie"

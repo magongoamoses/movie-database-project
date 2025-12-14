@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { fetchMovieDetails } from "../services/omdbApi";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const MovieDetails = () => {
     const { imdbID } = useParams();
@@ -27,7 +28,7 @@ const MovieDetails = () => {
         getMovie();
     }, [imdbID]);
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return <LoadingSpinner />;
     if (error) return <p>{error}</p>;
     if (!movie) return null;
 

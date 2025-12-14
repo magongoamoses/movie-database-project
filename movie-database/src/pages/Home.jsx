@@ -4,6 +4,7 @@ import SearchBar from "../components/SearchBar";
 import MovieList from "../components/MovieList";
 import ErrorMessage from "../components/ErrorMessage";
 import { fetchMovies } from "../services/omdbApi";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const Home = () => {
     const navigate = useNavigate();
@@ -41,7 +42,7 @@ const Home = () => {
         <div>
             <SearchBar onSearch={handleSearch} />
 
-            {loading && <p>Loading...</p>}
+            {loading && <LoadingSpinner />}
             {error && <ErrorMessage message={error} />}
 
             <MovieList movies={movies} onMovieClick={handleMovieClick} hasSearched={hasSearched} />
