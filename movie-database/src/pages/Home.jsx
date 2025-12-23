@@ -39,7 +39,7 @@ const Home = () => {
     };
 
     return (
-        <div>
+        <div className="px-4 py-8 min-h-screen flex flex-col justify-center">
             <SearchBar onSearch={handleSearch} />
 
             {loading && <LoadingSpinner />}

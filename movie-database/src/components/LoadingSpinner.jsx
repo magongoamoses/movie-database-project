@@ -1,5 +1,5 @@
 const LoadingSpinner = () => {
-    return <p>Loading...</p>;
+    return <p className="text-center text-gray-400">Loading...</p>;
 };
 
 export default LoadingSpinner;
