@@ -40,7 +40,11 @@ const Home = () => {
 
     return (
         <div className="px-2 sm:px-4 py-4 sm:py-8 min-h-screen flex flex-col justify-center">
-            <SearchBar onSearch={handleSearch} />
+            <h1 className="text-white text-6xl sm:text-4xl font-bold mb-8 text-center">🎬 MovieHub</h1>
+
+            <div className="w-full mb-10">
+                <SearchBar onSearch={handleSearch} />
+            </div>
 
             {loading && <div className="mt-4"><LoadingSpinner /></div>}
             {error && <div className="mt-4"><ErrorMessage message={error} /></div>}
