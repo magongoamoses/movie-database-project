@@ -73,7 +73,7 @@ npm run dev
 🌍 Deployment
 
 The application is deployed using Vercel
-🔗 Live Demo: (link here)
+🔗 Live Demo: https://moviehub-app-63.vercel.app/
 
 🧠 Challenges & Solutions
 
@@ -92,4 +92,4 @@ The application is deployed using Vercel
 
 - Moses Magongoa
 - Frontend Developer student
-📫 GitHub: (your GitHub link)
+📫 GitHub: https://github.com/magongoamoses
