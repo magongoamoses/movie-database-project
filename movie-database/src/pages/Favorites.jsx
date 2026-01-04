@@ -13,15 +13,17 @@ const Favorites = () => {
 
     if (favorites.length === 0) {
         return (
-            <div className="p-6">
+            <div className="p-4 sm:p-6">
                 <ErrorMessage message="No favorite movies yet." />
             </div>
         );
     }
 
     return (
-        <div className="p-6">
-            <h2 className="text-white text-2xl font-bold mb-4">My Favorites</h2>
+        <div className="p-4 sm:p-6 lg:p-8">
+            <h2 className="text-white text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-center">
+                My Favorites ({favorites.length})
+            </h2>
             <MovieList
                 movies={favorites}
                 onMovieClick={handleMovieClick}

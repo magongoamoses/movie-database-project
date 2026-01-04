@@ -39,11 +39,11 @@ const Home = () => {
     };
 
     return (
-        <div className="px-4 py-8 min-h-screen flex flex-col justify-center">
+        <div className="px-2 sm:px-4 py-4 sm:py-8 min-h-screen flex flex-col justify-center">
             <SearchBar onSearch={handleSearch} />
 
-            {loading && <LoadingSpinner />}
-            {error && <ErrorMessage message={error} />}
+            {loading && <div className="mt-4"><LoadingSpinner /></div>}
+            {error && <div className="mt-4"><ErrorMessage message={error} /></div>}
 
             <MovieList movies={movies} onMovieClick={handleMovieClick} hasSearched={hasSearched} />
         </div>

@@ -1,16 +1,95 @@
-# React + Vite
+🎬 Movie Database Application
+📌 Overview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Movie Database Application is a responsive frontend web app built with React that allows users to search for movies and view detailed information such as plot summaries, cast, genres, and ratings.
+The application integrates with the OMDB API and demonstrates real-world frontend development practices including API consumption, state management, routing, and component-based architecture.
 
-Currently, two official plugins are available:
+✨ Features
+## Core Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Search movies by title
+* Display movie list with poster, title, and release year
+* View detailed movie information:
+  - Plot summary
+  - Cast
+  - Genre
+  - Ratings
 
-## React Compiler
+* Responsive layout for mobile, tablet, and desktop
+* Error handling for empty results and API issues
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Additional Features
 
-## Expanding the ESLint configuration
+* Favorites (watchlist) functionality using localStorage
+* Add / remove movies from favorites
+* Dedicated Favorites page
+* Loading and error states
+* Clean, scalable component structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+
+* React (Vite)
+* JavaScript (ES6+)
+* OMDB API
+* Tailwind CSS (for styling)
+* React Router
+* Axios (for API requests)
+
+🔌 API Used
+
+OMDB API
+https://www.omdbapi.com/
+
+🧩 Project Structure (Key Components)
+
+* App – Application root and routing
+* SearchBar – Handles user search input
+* MovieList – Displays list of movie cards
+* MovieCard – Individual movie preview
+* MovieDetails – Detailed movie view
+* Favorites – Displays saved movies
+* ErrorMessage – Handles errors and empty states
+* Header & Footer – Layout components
+* api/omdb.js – API service layer
+
+🚀 Getting Started
+
+1. Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+2. Install dependencies
+npm install
+
+3. Setup environment variables
+
+Create a .env file in the root directory:
+
+VITE_OMDB_API_KEY=your_api_key_here
+
+4. Run the development server
+npm run dev
+
+🌍 Deployment
+
+The application is deployed using Vercel
+🔗 Live Demo: (link here)
+
+🧠 Challenges & Solutions
+
+* OMDB API limitations: No trending endpoint → simulated default movie listings on homepage
+* State and event handling: Fixed click navigation by correctly passing props and handlers
+* Favorites persistence: Solved using localStorage and shared state management
+
+📈 Future Improvements
+
+- Pagination for search results
+- Movie trailers integration
+- Sorting and filtering
+- Dark / light mode
+
+👤 Author
+
+- Moses Magongoa
+- Frontend Developer student
+📫 GitHub: (your GitHub link)
