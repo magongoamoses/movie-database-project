@@ -1,13 +1,18 @@
 import MovieCard from "./MovieCard";
 import ErrorMessage from "./ErrorMessage";
 
-const MovieList = ({ movies, onMovieClick, hasSearched }) => {
+const MovieList = ({ movies, onMovieClick, hasSearched, loading = false }) => {
+
     if (!hasSearched) {
         return (
             <p className="text-center mt-8 text-gray-400 px-4 text-sm sm:text-base">
                 Search for a movie to get started!
             </p>
         );
+    }
+
+    if (loading) {
+        return null;
     }
 
     if (!movies || movies.length === 0) {

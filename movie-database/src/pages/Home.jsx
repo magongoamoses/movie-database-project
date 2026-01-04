@@ -45,7 +45,7 @@ const Home = () => {
             {loading && <div className="mt-4"><LoadingSpinner /></div>}
             {error && <div className="mt-4"><ErrorMessage message={error} /></div>}
 
-            <MovieList movies={movies} onMovieClick={handleMovieClick} hasSearched={hasSearched} />
+            <MovieList movies={movies} onMovieClick={handleMovieClick} hasSearched={hasSearched} loading={loading} />
         </div>
     );
 };

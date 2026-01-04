@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="text-center bg-gray-800 text-gray-400 py-4 sm:py-6 px-4">
             <div className="space-y-2 sm:space-y-3">
                 <p className="text-xs sm:text-sm">
-                    &copy; {currentYear} MovieFinder. All rights reserved.
+                    &copy; {currentYear} MovieHub. All rights reserved.
                 </p>
                 <p className="text-xs sm:text-sm">
                     Powered by{" "}
